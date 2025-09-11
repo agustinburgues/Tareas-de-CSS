@@ -1,0 +1,47 @@
+.header-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  position: relative;
+  z-index: 2;
+
+  .logo img { 
+    height: 36px;
+    display: block; }
+
+  .nav-primary ul {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    
+
+    a {
+      font-weight: 600;
+      color: $primary-color;
+      transition: color .2s;
+
+      &:hover { color: $secondary_color; }
+    }
+  }
+
+  .header__login ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    .icon-btn {
+      display: inline-flex;
+      padding: 6px;
+      border-radius: 8px;
+      transition: transform .2s, background .2s;
+
+      img { height: 20px; width: 20px; }
+
+      &:hover {transform: translateY(-3px)}
+    }
+
+    .signin { font-weight: 600; color: $primary-color; &:hover { color: $secondary_color; } }
+  }
+}

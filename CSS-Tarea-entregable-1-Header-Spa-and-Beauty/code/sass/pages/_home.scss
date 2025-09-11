@@ -1,0 +1,38 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+
+
+  // fondo verde + flor
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;      // ocupa la mitad derecha
+    height: 80%;
+    background-color: #c7e7df;
+    background-image: url('img/spa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    z-index: 1;
+  }
+
+  // modelo como background
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: -15%;
+    width: 1400px;
+    height: 900px;
+    background-image: url('img/hero-model.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    border-radius: 28px;
+    padding: 8px 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+    background: $primary-color;
+    color: $white;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(34,58,90,0.12);
+    }
+}
+
+.watch-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: $primary-color;
+    position: relative;
+    img {
+        width: 46px;
+        height: 46px;   
+        position: relative;
+        top: 8px;
+    }
+    &:hover { color: $secondary_color; }
+}

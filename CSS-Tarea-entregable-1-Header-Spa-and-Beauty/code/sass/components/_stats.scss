@@ -1,0 +1,23 @@
+.stats {
+      display: flex;
+      gap: 40px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+      .stat {
+        text-align: center;
+
+        h3 {
+          font-size: 28px;
+          font-weight: 700;
+          margin: 10px 0;
+        }
+
+        p {
+          font-size: 14px;
+          color: #666;
+        }
+    }
+}

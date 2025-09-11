@@ -1,0 +1,27 @@
+.comentario {
+    position: absolute;
+    max-width: 300px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    font-size: 14px;
+    line-height: 1.4;
+    background: rgba(255, 255, 255, 0.55); 
+    z-index: 4;
+
+    .name {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #0a2540;
+    }
+}
+
+.comentario--top {
+    top: -150px;
+    right: -20px;
+}
+
+.comentario--bottom {
+    bottom: -350px;
+    right: 100px;
+}

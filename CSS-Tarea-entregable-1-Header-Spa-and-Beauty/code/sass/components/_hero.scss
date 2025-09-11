@@ -1,0 +1,45 @@
+.hero-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  align-items: center;
+  min-height: 750px;
+  
+
+    .hero_left {
+        position: relative;
+        
+
+        .hero-title {
+            font-size: 54px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: $primary-color;
+        }
+
+        .hero-sub {
+            font-size: 20px;
+            max-width: 560px;
+            margin-bottom: 32px;
+            color: $gray;
+        }
+
+        .hero-cta {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .hero_right {
+        position: relative;
+        span p {
+            color: $black;
+        }
+        .name {
+            color: $primary-color;
+        }
+    }
+}

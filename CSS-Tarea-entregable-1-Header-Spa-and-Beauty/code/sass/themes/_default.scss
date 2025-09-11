@@ -1,0 +1,14 @@
+html * {
+    font-family: $principal-font;
+}
+ 
+body {
+    overflow-x: hidden;
+    &name {
+        color: $primary-color;
+    }
+    .p {
+        color: $black;
+        
+    }
+} 
