@@ -1,0 +1,26 @@
+nav.nav-primary {
+    ul {
+        @include reset-list();
+        gap: 48px;
+        font-family: $primary-font;
+
+        a {
+            color: $gray;
+            font-weight: 300;
+            text-decoration: none;
+            &.active, &:hover{
+                color: $white;
+                position: relative;
+                &::before {
+                    content:'';
+                    position: absolute;
+                    height: 2px;
+                    background-color: $pink;
+                    width: 80%;
+                    bottom: -10px;
+                    left: 10%;
+                }
+            }
+        }
+    }
+}

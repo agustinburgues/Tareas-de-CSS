@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    background-color: $pink;
+    color: white;
+    padding: 16px 70px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.link {
+    display: inline-flex;
+    color: $white;
+    align-items: center;
+    &:hover {
+        color: $pink;
+        
+    }
+}

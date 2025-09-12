@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    align-items: center;
+    min-height: 750px;
+    &_content{
+        width: 80%;
+        h1{
+            font-family: $primary-font;
+            color: $white;
+            font-size: 70px;
+            line-height: 70px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        p {
+            color: $gray;
+            font-weight: 300;
+            font-size: 18px;
+            max-width: 70%;
+            margin-bottom: 30px;
+        }
+        .hero_cta {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            max-width: 500px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &__img {
+        width: 45%;
+        img {
+            max-width: 1000px;
+            position: relative;
+            right: -100%;
+        }
+    }
+}
