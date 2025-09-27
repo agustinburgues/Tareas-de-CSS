@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: block; 
+
+    .map {
+        width: 100%;  
+        height: auto;
+        display: block;
+        object-fit: contain; 
+    }
+    @include breakpoint(tablet) {
+       .map {
+            content: url(img/Maps-tablet.svg);
+            max-width: 100%;       
+            height: auto;
+       } 
+    }
+    @include breakpoint(desktop) {
+        .map {
+            content: url(img/Maps-desktop.svg);
+            max-width: 100%;       
+            height: auto;
+       } 
+    }
+}

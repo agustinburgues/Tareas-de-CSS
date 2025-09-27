@@ -1,0 +1,25 @@
+html * {
+    h1 {
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    h2 {
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 32px;
+        color: $orange;
+        font-weight: 900;
+    }
+    p {
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    a {
+        font-family: "Big Shoulders", sans-serif;
+    }
+}
+ 
+body {
+    overflow-x: hidden;
+} 

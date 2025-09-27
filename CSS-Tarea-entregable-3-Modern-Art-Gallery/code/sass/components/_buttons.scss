@@ -1,0 +1,63 @@
+.btn {
+    margin-top: 32px;
+    display: flex;
+    a{
+        background-color: $black;
+        padding: 24px 30px;
+        color: $white;
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+    img{
+        background-color: $orange;
+        padding: 24px;
+        transition: 0.5s;
+    }
+}
+
+.btn:hover {
+    a{
+        background-color: $orange;
+    }
+    img {
+        background-color: $black;
+    }
+}
+
+.btn-location{
+    position: absolute;
+    top: 0pc;   
+    left: 0px;  
+    display: flex;
+    a{
+        background-color: $black;
+        padding: 24px 30px;
+        color: $white;
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+    img{
+        background-color: $orange;
+        padding: 24px;
+        transition: 0.5s;
+    }
+    @include breakpoint(tablet) {
+       padding-left: 40px;
+    }
+    @include breakpoint(desktop) {
+       padding-left: 156px;
+    }
+}
+
+.btn-location:hover {
+    a{
+        background-color: $orange;
+    }
+    img {
+        background-color: $black;
+    }
+}

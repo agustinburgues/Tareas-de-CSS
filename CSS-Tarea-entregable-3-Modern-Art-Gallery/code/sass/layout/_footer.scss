@@ -1,0 +1,108 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: 48px 32px;
+
+    .footer-logo {
+        img {
+            margin-bottom: 38px;
+        }
+    }
+
+    .footer-text {
+        p {
+            margin-bottom: 38px;
+            font-size: 16px;
+        }
+    }
+
+    .footer-img {
+        display: flex;
+        gap: 20px;
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: translateY(-5px);
+        }
+    }
+    @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 56px 40px;
+
+        .footer-logo {
+            img {
+                margin-bottom: 0;
+            }
+        }   
+
+        .footer-text { 
+            p {
+                max-width: 400px; 
+                font-size: 16px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        .footer-img {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px; 
+        }
+    }
+    @include breakpoint(desktop) {
+        padding: 80px 165px;
+    }
+}
+
+.footer-location{
+    background-color: $orange;
+    padding: 48px 32px;
+    h3{
+        color: $black;
+        padding-bottom: 38px;
+    }
+    p{
+        color: $black;
+        padding-bottom: 38px;
+    }
+    img {
+         margin-right: 20px;
+        transition: transform 0.3s ease;
+        }
+    img:hover {
+        transform: translateY(-5px);
+    }
+    @include breakpoint(tablet) {
+        display: grid;
+        grid-template-columns: auto 1fr auto; 
+        align-items: center;
+        padding: 56px 40px;
+
+        .footer-logo img {
+            display: block;
+        }
+
+        .footer-text {
+            text-align: center;
+            p {
+                max-width: 400px;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+        }
+
+        .footer-img {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+    }
+    @include breakpoint(desktop) {
+        padding: 80px 165px;
+    }
+}
